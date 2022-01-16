@@ -6,7 +6,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SQRServiceTest {
-
     @ParameterizedTest
     @CsvSource( value = {
             "'withStraightOrder', 100 , 200, 4",
