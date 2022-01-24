@@ -6,7 +6,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SQRServiceTest {
-
     @ParameterizedTest
     @CsvSource( value = {
             "'maxRange', 100 , 9900, 90",
