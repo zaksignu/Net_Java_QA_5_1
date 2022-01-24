@@ -9,8 +9,10 @@ class SQRServiceTest {
 
     @ParameterizedTest
     @CsvSource( value = {
-            "'withStraightOrder', 100 , 200, 4",
-            "'withReversedOrder', 200 , 100, 4",
+            "'maxRange', 100 , 9900, 90",
+            "'outOfRange', 10 , 20, 0",
+            "'withStraightOrder', 100 , 200, 5",
+            "'withReversedOrder', 200 , 100, 5",
             "'githubExample', 200 , 300, 3"})
     void shouldWork(String testName, int aValue, int bValue, int expected) {
         SQRService service = new SQRService();
